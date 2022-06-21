@@ -5,7 +5,8 @@ on:
     branches:
       - master
   schedule:
-    - cron: "0 0 */2 * *"
+#   每隔五天自动commit一次
+    - cron: "0 0 */5 * *"
 
 jobs:
   autogreen:
